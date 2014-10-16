@@ -21,6 +21,12 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+sys.path.append(os.path.abspath('_exts'))
+
+# loading PhpLexer
+from sphinx.highlighting import lexers
+from pygments.lexers.web import PhpLexer
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -33,6 +39,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
+	'sensio.sphinx.refinclude',
+	'sensio.sphinx.configurationblock',
+	'sensio.sphinx.phpcode'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,8 +57,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'CommSy'
-copyright = '2014, effective WEBWORK GmbH'
+project = 'CommSy Documentation'
+copyright = 'CommSy Community'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -97,6 +106,15 @@ pygments_style = 'sphinx'
 
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
+
+# enable highlighting for PHP code not between ``<?php ... ?>`` by default
+lexers['php'] = PhpLexer(startinline=True)
+lexers['php-annotations'] = PhpLexer(startinline=True)
+
+primary_domain = 'php'
+
+# set url for API links
+#api_url = 'http://api.symfony.com/master/%s'
 
 
 # -- Options for HTML output ----------------------------------------------
@@ -202,7 +220,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'CommSy.tex', 'CommSy Documentation',
-   'effective WEBWORK GmbH', 'manual'),
+   'CommSy Community', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -232,7 +250,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'commsy', 'CommSy Documentation',
-     ['effective WEBWORK GmbH'], 1)
+     ['CommSy Community'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -246,7 +264,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'CommSy', 'CommSy Documentation',
-   'effective WEBWORK GmbH', 'CommSy', 'One line description of project.',
+   'CommSy Community', 'CommSy', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -261,3 +279,6 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+# Use PHP syntax highlighting in code examples by default
+highlight_language='php'
