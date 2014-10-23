@@ -114,7 +114,7 @@ lexers['php-annotations'] = PhpLexer(startinline=True)
 primary_domain = 'php'
 
 # set url for API links
-#api_url = 'http://api.symfony.com/master/%s'
+api_url = 'http://api.commsy.net/%s'
 
 
 # -- Options for HTML output ----------------------------------------------
