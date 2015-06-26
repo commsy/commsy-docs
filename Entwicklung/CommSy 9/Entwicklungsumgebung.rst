@@ -92,7 +92,7 @@ Mit dem Befehl ``vagrant ssh`` erfolgt die Anmeldung. CommSy befindet sich im Ve
         php app/console doctrine:migrations:migrate
 
         # Elasticsearch Index aufbauen
-        php app/console fos:elastica:popuplate
+        php app/console fos:elastica:populate
 
 .. tip::
 
