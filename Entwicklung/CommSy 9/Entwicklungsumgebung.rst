@@ -69,7 +69,7 @@ Die virtuellen Maschine lässt sich einfach aus der Konsole heraus starten:
 
     Unter Windows öffnen sich ggf. mehrere Dialogo der Benutzerkontensteuerung, da einige Operationen Administrationsrechte erfordern. Alternativ kann Git Bash als Administrator ausgeführt werden.
 
-Die Installation der virtuellen Maschine nimmt einige Zeit in Anspruch. Zuerst wird ein Image heruntergeladen und in VirtualBox konfiguriert. Nach dem ersten Start der VM wird diese provisioniert, entsprechende Softwarepakete werden heruntergeladen und eingrichtet.
+Die Installation der virtuellen Maschine nimmt einige Zeit in Anspruch. Zuerst wird ein Image heruntergeladen und in VirtualBox konfiguriert. Nach dem ersten Start der VM wird diese provisioniert, entsprechende Softwarepakete werden heruntergeladen und eingerichtet.
 
 Anmelden an der virtuellen Maschine
 -----------------------------------
