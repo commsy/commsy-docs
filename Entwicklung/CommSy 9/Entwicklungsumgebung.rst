@@ -121,6 +121,14 @@ Am Ende erfolgt ein Dialog zur Eingabe einiger Parameter. Nicht aufgeführte Wer
     - Port: 3306
 - locale: de
 
+Konfiguration von unmigrierten Einstellungen
+--------------------------------------------
+
+Derzeit sind noch nicht alle alten CommSy-Konfigurationen übernommen worden und es existiert noch keine Installations-Routine. Daher ist es notwendig insbesondere die Datenbankverbindung für den Legacy-Code zusätzlich zu konfigurieren.
+
+1. Im CommSy-Projekt die Datei legacy/etc/cs_config.php_dist kopieren und in cs_config.php umbenennen
+2. In der erzeugten Datei entsprechend Anpassungen vornehmen
+
 Verwalten der Datenbank
 -----------------------
 
