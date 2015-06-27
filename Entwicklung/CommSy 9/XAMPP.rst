@@ -12,7 +12,7 @@ Bei der Installation sind nicht unbedingt alle Komponentent erforderlich, aber e
 
     XAMPP benötigt Administrationsrechte für einige Funktionen und sollte deshalb unter Windows nicht in die normalen Programmverzeichnisse installiert werden.
 
-Nach er Installation öffnet sich das XAMPP Control Panel. Hier sind einige Einstellungen vorzunehmen. In der Zeile für das Apache-Modul wählen wir Config -> PHP (php.ini) und ändern/überprüfen die folgenden Einträge:
+Nach der Installation öffnet sich das XAMPP Control Panel. Hier sind einige Einstellungen vorzunehmen. In der Zeile für das Apache-Modul wählen wir Config -> PHP (php.ini) und ändern/überprüfen die folgenden Einträge:
 
 - error_reporting=E_ALL
 - date.timezone=Europe/Berlin
@@ -53,7 +53,7 @@ Als nächstes konfigurieren wir den virtual Host für Apache. Dazu wählen wir C
             CustomLog logs/commsy_access.log combined
         </VirtualHost>
 
-Später benötigen wir php als Befehl auf der Kommandozeile. Dafür muss der Pfad zur Version, die wir mit XAMPP heruntergeladen haben in die Umgebungsvariablen eingetragen werden. Unter Windows funktioniert dies über Systemsteuerung -> System und Sicherheit -> System -> Erweiterte Systemeinstellungen -> Umgebungsvariablen.
+Später benötigen wir php als Befehl auf der Kommandozeile. Dafür muss der Pfad zur Version, die wir mit XAMPP heruntergeladen haben, in die Umgebungsvariablen eingetragen werden. Unter Windows funktioniert dies über Systemsteuerung -> System und Sicherheit -> System -> Erweiterte Systemeinstellungen -> Umgebungsvariablen.
 
 Im unteren Teil unter Systemvariablen suchen wir die Variable ``Path`` und ergänzen diese um ``;C:\xampp\mysql\bin;C:\xampp\php;``, entsprechend des Installationsverzeichnissen von XAMPP. Außerdem prüfen wir, ob ein Eintrag für nodejs vorhanden ist: ``C:\Program Files\nodejs\;``. Die Umgebungsvariablen werden erst geladen, wenn die Eingabeaufforderung neu gestartet wird.
 
