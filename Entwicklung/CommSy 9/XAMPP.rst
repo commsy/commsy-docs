@@ -74,7 +74,9 @@ Folgt noch...
 
 Alles für CommSy vorbereiten
 ----------------------------
-Als nächstes starten wir Apache und MySQL aus dem XAMPP Control Panel heraus. In der Zeile MySQL öffnen wir mit der Aktion ``Admin`` phpMyAdmin und erzeugen eine neue Datenbank mit dem Namen **commsy** und der Kollation **utf8mb4_general_ci**. An dieser stelle sollte auch ein Dump der Datenbank eingespielt werden. Anschließend navigieren wir im Terminal / der Eingabeaufforderung zum CommSy-Projekt. In der Konsole führen wir folgende Befehle aus:
+Als nächstes starten wir Apache und MySQL aus dem XAMPP Control Panel heraus. In der Zeile MySQL öffnen wir mit der Aktion ``Admin`` phpMyAdmin und erzeugen eine neue Datenbank mit dem Namen **commsy** und der Kollation **utf8mb4_general_ci**. An dieser stelle sollte auch ein Dump der Datenbank eingespielt werden.
+
+Anschließend navigieren wir im Terminal / der Eingabeaufforderung zum CommSy-Projekt. Unter Windows sollte die Eingabeaufforderung unbedingt als Administrator ausgeführt werden, weil sonst keine Symlinks erzeugt werden können. In der Konsole führen wir folgende Befehle aus:
 
 .. code-block:: bash
         :linenos:
