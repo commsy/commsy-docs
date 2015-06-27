@@ -68,6 +68,10 @@ Um die erforderlichen Pakete zu installieren, kann im Terminal / in der Eingabea
 
         npm install -g bower less
 
+Elasticsearch
+-------------
+Folgt noch...
+
 Alles für CommSy vorbereiten
 ----------------------------
 Als nächstes starten wir Apache und MySQL aus dem XAMPP Control Panel heraus. In der Zeile MySQL öffnen wir mit der Aktion ``Admin`` phpMyAdmin und erzeugen eine neue Datenbank mit dem Namen **commsy** und der Kollation **utf8mb4_general_ci**. An dieser stelle sollte auch ein Dump der Datenbank eingespielt werden. Anschließend navigieren wir im Terminal / der Eingabeaufforderung zum CommSy-Projekt. In der Konsole führen wir folgende Befehle aus:
@@ -102,10 +106,6 @@ Derzeit sind noch nicht alle alten CommSy-Konfigurationen übernommen worden und
 
 1. Im CommSy-Projekt die Datei legacy/etc/cs_config.php_dist kopieren und in cs_config.php umbenennen
 2. In der erzeugten Datei entsprechend Anpassungen vornehmen
-
-Elasticsearch
--------------
-Folgt noch...
 
 CommSy im Browser öffnen
 ------------------------
