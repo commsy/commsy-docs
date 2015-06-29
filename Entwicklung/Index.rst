@@ -2,6 +2,6 @@ Entwicklung
 ===========
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
     CommSy 9/Index
