@@ -9,6 +9,7 @@ Die Version 9 von CommSy wird im Branch 9.0 des Git-Repositories verwaltet. Im Q
 
     - vagrant-bindfs Plugin
     - vagrant-hostmanager Plugin
+    - vagrant-winnfsd Plugin (Windows)
 
 Installation von VirtualBox / Vagrant
 -------------------------------------
@@ -23,6 +24,22 @@ Zusätzlich zu VirtualBox und Vagrant müssen einige Plugins installiert werden.
 
         # vagrant-hostmanager Plugin installieren
         vagrant plugin install vagrant-hostmanager
+
+        # NFS Support für Windows (optional)
+        vagrant plugin install vagrant-winnfsd
+
+.. attention::
+    
+    Unter Windows kommt es derzeit zu Problemen mit der Ruby FFI library (Version 1.9.9). Wenn beim Starten der VM Probleme auftauchen, kann es helfen explizit die Version 1.9.8 zu installieren.
+
+    .. code-block:: bash
+        :linenos:
+
+        # ffi Plugin entfernen, falls vorhanden
+        vagrant plugin uninstall ffi
+
+        # ffi Plugin in Version 1.9.8 installieren
+        vagrant plugin install ffi --plugin-version 1.9.8
 
 Starten der virtuellen Maschine
 -------------------------------
