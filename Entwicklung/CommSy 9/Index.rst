@@ -26,11 +26,11 @@ Im Terminal oder der Git Bash wechseln wir in das erstellte Arbeitverzeichnis we
         # CommSy in das Verzeichnis commsy9 clonen
         git clone https://github.com/commsy/commsy.git commsy9
 
-        # Git Konfiguration - Line Endings
-        git config core.autocrlf input
-
         # In das neu angelegte Verzeichnis wechseln
         cd commsy9
+
+        # Git Konfiguration - Line Endings
+        git config core.autocrlf input
 
         # Den Branch 9.0 auschecken
         git checkout 9.0
