@@ -8,8 +8,8 @@ Upgrade
 Update ohne Symlink-Struktur
 ----------------------------
 1. Zuerst muss die aktuelle CommSy-Version heruntergeladen und entpackt werden. Wir legen das neue Release neben die aktuelle Version (CommSy-Wurzelverzeichnis).
-2. Um alle Uploads aus der aktuellen Installation zu übernehmen, kopieren wir alle Dateien: [alteVersion]/var/* -> [neueVersion]/var/*
-3. Kopieren der aktuellen Konfigurationsdateien [alteVersion]/etc/cs_config.php -> [neueVersion]/etc/ und [alteVersion]/etc/commsy/*.php -> [neueVersion]/etc/commsy
+2. Um alle Uploads aus der aktuellen Installation zu übernehmen, kopieren wir alle Dateien: [alteVersion]/var/\* -> [neueVersion]/var/\*
+3. Kopieren der aktuellen Konfigurationsdateien [alteVersion]/etc/cs_config.php -> [neueVersion]/etc/ und [alteVersion]/etc/commsy/\*.php -> [neueVersion]/etc/commsy
 4. [Optional] Kopieren von Portal-Themes: [alteVersion]/external_pages/ und [alteVersion]/htdocs/css/external_portal_styles/
 5. Nach dem Austausch der Source-Dateien loggen wir uns in CommSy ein und konfigurieren die Installation auf Server-Ebene. Dort müssen alle Update-Skripte ausgeführt werden, um die Datenbank zu aktualisieren.
 6. Dateirechte für den Webbenutzer anpassen, insbesondere Schreibrechte auf var/
