@@ -11,8 +11,9 @@ Update ohne Symlink-Struktur
 2. Um alle Uploads aus der aktuellen Installation zu übernehmen, kopieren wir alle Dateien: [alteVersion]/var/\* -> [neueVersion]/var/\*
 3. Kopieren der aktuellen Konfigurationsdateien [alteVersion]/etc/cs_config.php -> [neueVersion]/etc/ und [alteVersion]/etc/commsy/\*.php -> [neueVersion]/etc/commsy
 4. [Optional] Kopieren von Portal-Themes: [alteVersion]/external_pages/ und [alteVersion]/htdocs/css/external_portal_styles/
-5. Nach dem Austausch der Source-Dateien loggen wir uns in CommSy ein und konfigurieren die Installation auf Server-Ebene. Dort müssen alle Update-Skripte ausgeführt werden, um die Datenbank zu aktualisieren.
-6. Dateirechte für den Webbenutzer anpassen, insbesondere Schreibrechte auf var/
+5. Dateirechte für den Webbenutzer anpassen, insbesondere Schreibrechte auf var/
+6. vHost Konfiguration anpassen, so dass die neue Version benutzt wird
+7. Nach dem Austausch der Source-Dateien einloggen und prüfen, ob es auf Konfigurationsebene des Servers neue Updates gibt. Dort müssen alle Update-Skripte ausgeführt werden, um die Datenbank zu aktualisieren.
 
 .. tip::
     
