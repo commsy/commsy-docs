@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 CommSy Dokumentation
-==================================
+====================
 
 Inhalt:
 
@@ -12,15 +12,15 @@ Inhalt:
    :maxdepth: 2
 
    Installation/Index
+   Upgrade/Index
    Konfiguration/Index
    Änderungen mit CommSy 9/Index
    API/Index
    Entwicklung/Index
 
-Indices and tables
-==================
+Index
+=====
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

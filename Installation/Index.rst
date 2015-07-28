@@ -6,10 +6,4 @@ Installation
 
     Anforderungen
     Download
-    Migration von früheren Versionen <Migration>
-
-inhalt...
-
-.. tip::
-
-	hier steht ein sinnvoller hinweis.
+    Setup
