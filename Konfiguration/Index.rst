@@ -1,7 +1,9 @@
 Konfiguration
 =============
 
-.. code-block:: yaml
-    :linenos:
+.. toctree::
+    :maxdepth: 1
 
-    configuration examples
+    Automatisches Ablaufen von Passwörtern <Passwort_Ablauf>
+    Automatiches Löschen von inaktiven Kennungen <Inaktive_Kennungen>
+    Automatisches Löschen von inaktiven Räumen <Inaktive_Räume>

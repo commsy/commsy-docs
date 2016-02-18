@@ -84,6 +84,15 @@ Mit dem Befehl ``vagrant ssh`` erfolgt die Anmeldung. CommSy befindet sich im Ve
         # Elasticsearch Index aufbauen
         php app/console fos:elastica:populate
 
+        # Node Packages installieren
+        npm install
+
+        # Bower abhängigkeiten installieren
+        bower install
+
+        # Gulp-Skript ausführen
+        gulp
+
 .. tip::
 
     Insbesondere unter Windows scheint es bei vielen Dateiaktionen Probleme mit dem NFS-Mounting zu geben. Wenn es während der Installation der Abhängigkeiten zu Problem oder Fehlerausgaben kommt, hilft es die virtuelle Maschine neu zu starten (alternativ manuell shared-Folder neu mounten):
