@@ -17,7 +17,7 @@ Inhalt:
    Änderungen mit CommSy 9/Index
    API/Index
    Entwicklung/Index
-   Plugins/Index
+   Erweiterungen/Index
 
 Index
 =====
