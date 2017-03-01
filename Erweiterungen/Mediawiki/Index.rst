@@ -123,27 +123,52 @@ server-Definition für die Wiki-Family-Installationen (<context_id>.mediawiki.vm
           sendfile off;
         }
 
-Anpassungen LocalSettings.php für ein Family-Wiki
--------------------------------------------------
+Apache vhost-Einstellungen
+-------------------------
+
+noch nicht vorhanden
+
+
+Konfiguraton CommSy9 - commsy.yaml
+----------------------------------
 
 .. code-block:: bash
         :linenos:
-        
-            $wgSitename = "<context_id>";
-            
-            $wgServer = "http://<context_id>.mediawiki.vm";
-            
-            $wgDBtype = "mysql";
-            $wgDBserver = "...";
-            $wgDBname = "mediawiki_<context_id>";
-            $wgDBuser = "...";
-            $wgDBpassword = "...";
-            
-            $wgUploadDirectory = "/var/www/mediawiki/wikis/<context_id>/uploads";
-            
-            $wgUploadPath = "/uploads";
+
+            # mediawiki
+            mediawiki:
+                # set the following variable to activate mediawiki extension
+                enabled: true
+                url: 'http://mediawiki.dev.commsy.net'  (1)
+                roomWikiUrl: 'http://mediawiki.dev.commsy.net/[COMMSY_CONTEXT_ID]/index.php' (2)
+                apiPath: '/api.php' (3)
+                
+1) URL des Basis-Wikis.
+2) URL-Muster für die Raum-Wikis. "[COMMSY_CONTEXT_ID]" wird von CommSy ersetzt.
+3) Pfad zur api.php des Basis-Wikis.
+
 
 Mediawiki CommSy-Plugin
 -----------------------
 
-...
+- Git Repository unter https://gitlab.effective-webwork.de/jschultze/mediawiki_commsy_extension.git
+- Installation unter mediawiki/extensions/CommSy
+- Anpassen der configuration.ini
+
+.. code-block:: bash
+        :linenos:
+        
+            mediawikiUrl = "http://mediawiki.dev.commsy.net/[COMMSY_CONTEXT_ID]" (1)
+            mediawikiRoot = "/data/www/dev_commsy9_mediawiki/htdocs/" (2)
+            commsyUrl = "http://ci.commsy.net" (3)
+            commsySoap = "/api/soap" (4)
+            
+            dbUser = ... (5)
+            dbPassword = ...
+            dbName = ...
+            
+1) URL-Muster für die Raum-Wikis. "[COMMSY_CONTEXT_ID]" wird von CommSy ersetzt.
+2) Installationspfad des Wikis (oberhalb /base und /wikis)
+3) URL der CommSy-Installation
+4) Pfad zur SOAP-Schnittstelle
+5) Datenbankdaten. Für die Raum-Wikis wird die "<CONTEXT-ID>_" als Prefix genutzt.
