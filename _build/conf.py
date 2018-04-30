@@ -42,7 +42,7 @@ extensions = [
 	'sensio.sphinx.refinclude',
 	'sensio.sphinx.configurationblock',
 	'sensio.sphinx.phpcode',
-    #'sensio.sphinx.bestpractice',
+    'sensio.sphinx.bestpractice',
     #'sensio.sphinx.codeblock',
     #'symfonycom.sphinx'
 ]
