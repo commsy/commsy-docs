@@ -1,8 +1,7 @@
 Download
 ========
-Die aktuellen CommSy-Sources und Packages können von der CommSy-Projektseite auf SourceForge oder direkt über GitHub bezogen werden:
+Die aktuellen CommSy-Sources und Packages können über GitHub bezogen werden:
 
-- http://sourceforge.net/projects/commsy/files/CommSy (Packages)
 - https://github.com/commsy/commsy/releases (Source + Packages)
 
 Packages

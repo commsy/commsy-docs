@@ -13,8 +13,7 @@ Inhalt:
 
    Installation/Index
    Upgrade/Index
-   Konfiguration/Index
-   Änderungen mit CommSy 9/Index
+   Funktionen/Index
    API/Index
    Entwicklung/Index
    Erweiterungen/Index

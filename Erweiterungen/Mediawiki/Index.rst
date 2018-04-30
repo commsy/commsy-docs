@@ -124,7 +124,7 @@ server-Definition für die Wiki-Family-Installationen (<context_id>.mediawiki.vm
         }
 
 Apache vhost-Einstellungen
--------------------------
+--------------------------
 
 noch nicht vorhanden
 

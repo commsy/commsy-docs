@@ -32,3 +32,12 @@ Upgrade von CommSy 8 auf CommSy 9
 .. warning::
     
     Vor der Migration auf CommSy 9 muss die derzeitige Installation unbedingt auf den neusten Stand der Versionsreihe 8.x aktualisiert werden!
+
+Änderungen mit CommSy 9
+-----------------------
+
+Folgende Funktionen wurden im Zuge der CommSy 9 Entwicklung entfernt oder werden aktuell entfernt und sind nicht mehr Bestandteil von CommSy:
+
+- Der FCKEditor wurde aus dem Portal entfernt
+- CAS Authentifizierung wurde entfernt
+- Verschiedene veraltete Ausgabemodi wurden entfernt (XML, BLANK, PDA, JSON, page help)
