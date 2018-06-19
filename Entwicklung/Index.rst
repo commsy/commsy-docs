@@ -36,6 +36,21 @@ Im Folgenden werden aber alle Befehle direkt auf der Konsole ausgeführt, um die
         # Den Branch 9.0 auschecken
         git checkout 9.0
 
+Git-Workflow
+------------
+
+Alle aktiv in Entwicklung befindlichen Versionen werden durch einen Minor-Branch verfolgt. CommSy folgt dabei der
+`Semantic Versioning Specification <https://semver.org/>`_. Es gibt parallel meist nicht mehr als 2-3 dieser Release-Branches.
+Konkrete Releases werden mit einem Tag versehen.
+
+Alle Bugfixes und Features die entwickelt werden, müssen in eigene Topic-Branches ausgelagert werden. Diese existieren meistens
+nur lokal, können aber auch geteilt werden. Topic-Branches müssen von dem **niedrigsten** Release-Branch abgezweigt werden, auf dessen Version
+sie sich beziehen. Ein Bug, der zum Beispiel in der Version 9.0 und 9.1 auftritt, muss in 9.0 behoben werden. Die Branches werden nach dem Muster
+`fix/xxx`, bzw. `feature/xxx` benannt.
+
+Änderungen an Bugfix- und Feature-Branches werden mit einem testbaren Stand in den ci-Branch gemergt, der die aktuellste
+Entwicklungsversion zum Testen darstellt. Nach Abnahme eines Tickets werden die Änderungen dann in den Release-Branch zurückgemergt,
+aus dem sie ursprünglich abgezweigt wurden.
 
 Umgebung
 --------
