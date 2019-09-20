@@ -5,7 +5,7 @@ In CommSy werden automatische Tests mit Codecept ausgeführt, einer Testsuite f�
 
 Tests ausführen
 ---------------
-Tests verwenden in einer dedizierte Datenbank und einem gesonderten Nginx-Dienst ausgeführt. Außerdem werden Browsertests über Selenium ausgeführt. Um die entsprechenden Container in der Entwicklungs zusätzlich zu starten muss die entsprechende docker-compose file zusätzlich geladen werden:
+Tests werden in einer dedizierten Datenbank und einem gesonderten Nginx-Dienst ausgeführt. Außerdem werden Browsertests über Selenium ausgeführt. Um die entsprechenden Container während der Entwicklung zusätzlich zu starten muss die entsprechende docker-compose Datei zusätzlich geladen werden:
 
 .. code-block:: bash
         :linenos:
