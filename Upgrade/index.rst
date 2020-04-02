@@ -19,7 +19,7 @@ Update ohne Symlink-Struktur
     
     Mit jedem Release kann es zu Änderungen in den Konfigurationsdateien kommen. Diese varrieren je nach Versionssprung mehr oder weniger stark. Es empfiehlt sich daher die einzelnden Dateien zu vergleichen. Optional kann das Kopieren der Konfiguration auch weggelassen werden, CommSy wird diese dann neu anlegen.
 
-Update mit Symlink-Struktur (siehe :doc:`/Installation/Setup`)
+Update mit Symlink-Struktur (siehe :doc:`/Installation/setup`)
 --------------------------------------------------------------
 
 Upgrade von CommSy 7 auf CommSy 8

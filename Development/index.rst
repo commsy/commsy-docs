@@ -5,7 +5,7 @@ Development
     :maxdepth: 1
     
     docker
-    Styling
+    styling
     Search/index
     Tests/tests
     General Authentication <Authentication/general>

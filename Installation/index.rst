@@ -4,6 +4,6 @@ Installation
 .. toctree::
     :maxdepth: 1
 
-    Requirements
+    requirements
     download
     setup
