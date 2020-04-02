@@ -6,17 +6,17 @@
 CommSy Dokumentation
 ====================
 
-Inhalt:
+Content:
 
 .. toctree::
    :maxdepth: 2
 
-   Installation/Index
-   Upgrade/Index
-   Funktionen/Index
-   API/Index
-   Entwicklung/Index
-   Erweiterungen/Index
+   Installation/index
+   Upgrade/index
+   API/index
+   Development/index
+   Functions/index
+   Addons/index
 
 Index
 =====

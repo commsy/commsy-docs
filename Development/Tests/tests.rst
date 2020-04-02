@@ -3,8 +3,8 @@ Tests
 
 In CommSy werden automatische Tests mit Codecept ausgeführt, einer Testsuite für PHP. Diese umfasst under anderem Unit-, Acceptance- und Functional- Tests.
 
-Tests ausführen
----------------
+Running tests
+-------------
 Tests werden in einer dedizierten Datenbank und einem gesonderten Nginx-Dienst ausgeführt. Außerdem werden Browsertests über Selenium ausgeführt. Um die entsprechenden Container während der Entwicklung zusätzlich zu starten muss die entsprechende docker-compose Datei zusätzlich geladen werden:
 
 .. code-block:: bash

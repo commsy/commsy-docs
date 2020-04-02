@@ -39,7 +39,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
-	'sensio.sphinx.refinclude',
+	# 'sensio.sphinx.refinclude',
 	'sensio.sphinx.configurationblock',
 	'sensio.sphinx.phpcode',
     'sensio.sphinx.bestpractice',
