@@ -1,0 +1,24 @@
+- title: My Group Title
+  docs:
+  - home
+
+- title: API
+  docs:
+  - rest
+  - soap
+
+- title: Development
+  docs:
+  - getting-started
+  - tests
+
+- title: Installation
+  docs:
+  - download
+  - requirements
+  - setup
+  - docker
+
+- title: Addons
+  docs:
+  - etherpad
