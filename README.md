@@ -3,12 +3,12 @@ CommSy Documentation
 
 ## References
 - https://jekyllrb.com/docs/
-- https://aksakalli.github.io/jekyll-doc-theme/
+- https://idratherbewriting.com/documentation-theme-jekyll/
 
 ## Run locally
 ```
 gem install bundler
-bundle install
+bundle update
 
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```

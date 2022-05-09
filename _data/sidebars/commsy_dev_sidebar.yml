@@ -1,0 +1,81 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: CommSy Developer
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+      - title:
+        url: /titlepage.html
+        output: pdf
+        type: frontmatter
+      - title:
+        url: /tocpage.html
+        output: pdf
+        type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+      - title: Get started
+        url: /commsy_dev_landing.html
+        output: web, pdf
+        type: homepage
+
+  - title: Installation
+    output: web, pdf
+    folderitems:
+
+      - title: Download
+        url: /commsy_dev_installation_download.html
+        output: web, pdf
+
+      - title: Requirements
+        url: /commsy_dev_installation_requirements.html
+        output: web, pdf
+
+      - title: Setup
+        url: /commsy_dev_installation_setup.html
+        output: web, pdf
+
+      - title: Docker
+        url: /commsy_dev_installation_docker.html
+        output: web, pdf
+
+  - title: Development
+    output: web, pdf
+    folderitems:
+
+      - title: Getting started
+        url: /commsy_dev_development_getting_started.html
+        output: web, pdf
+
+      - title: Tests
+        url: /commsy_dev_development_tests.html
+        output: web, pdf
+
+  - title: API
+    output: web, pdf
+    folderitems:
+
+      - title: REST
+        url: /commsy_dev_api_rest.html
+        output: web, pdf
+
+      - title: Soap
+        url: /commsy_dev_api_soap.html
+        output: web, pdf
+
+  - title: Addons
+    output: web, pdf
+    folderitems:
+
+    - title: Etherpad
+      url: /commsy_dev_addons_etherpad.html
+      output: web, pdf
