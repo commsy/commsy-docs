@@ -59,8 +59,6 @@ Alternatively, you can use [the **Xdebug extension**](https://xdebug.org/docs/st
 
 On command line, you need to tell PHPStorm which [path mapping configuration](https://www.jetbrains.com/help/phpstorm/zero-configuration-debugging-cli.html#configure-path-mappings) should be used, set the value of the PHP_IDE_CONFIG environment variable to `serverName=commsy`, where `commsy` is the name of the debug server configured in PHPStorm.
 
-    Example:
-
-    ```console
-    XDEBUG_SESSION=1 PHP_IDE_CONFIG="serverName=commsy" php bin/console ...
-    ```
+```console
+XDEBUG_SESSION=1 PHP_IDE_CONFIG="serverName=commsy" php bin/console ...
+```
