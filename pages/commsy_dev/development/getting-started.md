@@ -41,7 +41,7 @@ Go to Settings -> PHP and click the three dots (...) on the right side of `CLI I
 
 Go to Settings -> PHP -> Test Frameworks and add a new configuration with type `Codeception by Remote Interpreter`. Select the docker compose interpreter created above. Unter Codeception library hit refresh on the right side. The Codeception version should be filled automatically.
 
-Create a PHP Remote Debug configuration with the following parameters:
+Go to Settings -> PHP -> Servers and create a new configuration with the following parameters:
 
 - Server
   - Name: commsy
