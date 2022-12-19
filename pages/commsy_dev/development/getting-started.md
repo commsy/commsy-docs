@@ -45,8 +45,8 @@ Go to Settings -> PHP -> Servers and create a new configuration with the followi
 
 - Server
   - Name: commsy
-  - Host: _
-  - Port: 80
+  - Host: localhost
+  - Port: 443
   - Debugger: Xdebug
   - Use path mappings: checked
   - Absolute path on the server: /var/www/html
