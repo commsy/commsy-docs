@@ -9,6 +9,7 @@
     <toc-element topic="Home.topic">
     </toc-element>
     <toc-element topic="Developer.md">
+        <toc-element topic="Cronjobs.md"/>
         <toc-element topic="Running-Tests.md"/>
         <toc-element topic="Getting-Started.md"/>
         <toc-element topic="Debugging.md"/>
