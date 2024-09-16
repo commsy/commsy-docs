@@ -1,3 +1,3 @@
 # User
 
-Start typing here...
+User information

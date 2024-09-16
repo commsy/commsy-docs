@@ -1,3 +1,3 @@
 # Developer
 
-Start typing here...
+Development information
