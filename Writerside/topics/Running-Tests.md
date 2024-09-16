@@ -4,7 +4,7 @@ Different types of tests are preformed. Those are - but not limited to - Unit-, 
 
 Tests are performed in a dedicated environment and database.
 
-```terminal
+```bash
     # Run all tests
     make test
     
@@ -13,6 +13,6 @@ Tests are performed in a dedicated environment and database.
 ```
 
 Running test from within the php container:
-```terminal
+```bash
     APP_ENV=test php vendor/bin/codecept run
 ```
