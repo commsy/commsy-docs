@@ -17,5 +17,9 @@
     <toc-element topic="API.md">
         <toc-element topic="REST.md"/>
     </toc-element>
-    <toc-element topic="User.md"/>
+    <toc-element topic="User.md">
+        <toc-element topic="Portal-Configuration.md">
+            <toc-element topic="Mail-texts.md"/>
+        </toc-element>
+    </toc-element>
 </instance-profile>
