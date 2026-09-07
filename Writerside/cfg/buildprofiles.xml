@@ -9,10 +9,5 @@
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
-    <build-profile instance="c">
-        <variables>
-            <noindex-content>true</noindex-content>
-        </variables>
-    </build-profile>
 
 </buildprofiles>

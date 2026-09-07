@@ -3,23 +3,27 @@ name: Build documentation
 on:
   push:
     branches: ["main"]
+  pull_request:
   workflow_dispatch:
 
 permissions:
-  id-token: write
-  pages: write
+  contents: read
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 env:
   INSTANCE: 'Writerside/c'
   ARTIFACT: 'webHelpC2-all.zip'
-  DOCKER_VERSION: '241.18775'
+  DOCKER_VERSION: 'latest'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -31,7 +35,7 @@ jobs:
           docker-version: ${{ env.DOCKER_VERSION }}
 
       - name: Save artifact with build results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: docs
           path: |
@@ -43,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: docs
           path: artifacts
@@ -53,6 +57,10 @@ jobs:
         with:
           instance: ${{ env.INSTANCE }}
   deploy:
+    if: github.event_name != 'pull_request'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -60,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: docs
 
@@ -68,13 +76,13 @@ jobs:
         run: unzip -O UTF-8 -qq '${{ env.ARTIFACT }}' -d dir
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
 
       - name: Package and upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dir
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
